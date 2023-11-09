@@ -1,0 +1,46 @@
+GET http://localhost:3002/api/persons/
+
+###
+
+
+GET http://localhost:3002/api/persons/3
+
+
+###
+
+POST http://localhost:3002/api/persons/
+content-type: application/json
+
+{
+    "name": "Mikko M",
+    "number": "123334543536" 
+}
+
+
+###
+
+
+POST http://localhost:3002/api/persons/
+content-type: application/json
+
+{
+    "name": "Mikko M",
+    "number": "" 
+}
+
+###
+
+
+
+POST http://localhost:3002/api/persons/
+content-type: application/json
+
+{
+    "name": "",
+    "number": "123334543536" 
+}
+
+###
+
+
+DELETE http://localhost:3002/api/persons/5932690
